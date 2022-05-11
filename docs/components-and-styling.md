@@ -61,7 +61,7 @@ Every project requires some UI components such as modals, tabs, sidebars, menus,
 
 Kiwi is our **UI components package**, it is built on **Stitches** api.
 It is a fully **typed** package with Typescript.
-Accessibility standard in these components is bring by **Radix UI** primitives components.
+Accessibility standard in these components is brought by **Radix UI** primitives components.
 
 1. A component must expose an API in accordance with the responsibilities its name suggests, making its purpose obvious.
    i.e: A `<Text />` component might expose props to modify its font weight or its alignment, not for defining his margin.
