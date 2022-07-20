@@ -4,7 +4,7 @@ There is no need to keep all of your state in a single centralized store. At You
 
 ## Component State
 
-This is the state that only a component needs, and it is not meant to be shared deep down the compontent tree. **Keep your state as close as possible to where its used**, and lift the state up if needed. For this type of state, you will need:
+This is the state that only a component needs, and it is not meant to be shared deep down the compontent tree. **Keep your state as close as possible to where it's used**, and lift the state up if needed. For this type of state, you will need:
 
 - [useState](https://reactjs.org/docs/hooks-reference.html#usestate) - for simpler states (i.e. primitive values)
 - [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) - for more complex states where on a single action you want to update several pieces of state
@@ -19,7 +19,7 @@ Many times you'll need to share the state to children. Keep it simple and pass i
 
 ### Context
 
-If you need to shared state among severals components or pages (Application State), use React `Context`.  
+If you need to share state among severals components or pages (Application State), use React `Context`.  
 A great use case for `Context`, it's when you want to make your component composable, and yet share the same state.
 
 [context](https://reactjs.org/docs/context.html) + [hooks](https://reactjs.org/docs/hooks-intro.html)
