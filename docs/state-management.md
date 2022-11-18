@@ -43,6 +43,18 @@ To validate the form, create a schema using [yup](https://github.com/jquense/yup
 
 [Form Example Code](../src/components/Form/Form.tsx)
 
+### Choose between controlled or uncontrolled inputs
+
+When you add inputs into a form, **you have to choose if you want it to be controlled  (using the RHF Controller) or not**.
+Take this decision intentionally because you have to stick with it during the component lifetime.  
+If you mix both concept, you'll have this React warning:
+```
+A component is changing an uncontrolled input to be controlled . This is likely caused by the value changing from undefined to a defined value , which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component.
+```
+
+**As described, a controlled component should never have an `undefined` value ; undefined mean it's uncontrolled.**  
+Be careful and use empty string `""` or `null` values on controlled inputs.
+
 ## URL State
 
 State that is being kept in the address bar of the browser. It is usually tracked via url params (`/app/${dynamicParam}`) or query params (`/app?dynamicParam=1`). It can be accessed and controlled via `react-router-dom`.
