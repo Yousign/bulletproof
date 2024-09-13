@@ -33,3 +33,10 @@
 #### When not to use:
 - Avoid using it for trivial computations.
 - Overusing `useMemo` can reduce readability without significant performance gain.
+
+## Rule: Barrel File Usage
+
+- Use barrel files (`index.ts`) for directories containing multiple exports (feature root or root of a component folder to split sub-component files)
+- Avoid barrel files in directories with only one module to prevent unnecessary abstraction.
+- Ensure proper tree shaking by only re-exporting necessary modules.
+- Keep imports explicit in critical performance areas (e.g., large component libraries).
