@@ -35,6 +35,7 @@ This is not supposed to be a template, boilerplate or a framework. It is an opin
 - [🌐 Deployment](docs/deployment.md)
 - [📚 Additional Resources](docs/additional-resources.md)
 - [👨‍🦯 Accessibility](docs/accessibility.md)
+- [🚦 Best practices](docs/best-practices.md)
 
 ## Contributing
 
